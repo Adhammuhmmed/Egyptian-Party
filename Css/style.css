@@ -1,0 +1,167 @@
+/* GLOBAL */
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  scroll-behavior: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton SC", sans-serif;
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/* GLOBAL */
+
+/* ASIDE */
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+aside .outer {
+  width: 0;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+aside .links a {
+  display: none;
+  font-size: 18px;
+  color: #777;
+  letter-spacing: 1px;
+  transition: all 0.5s;
+}
+aside .links a:hover {
+  letter-spacing: 5px;
+  color: #37103a;
+  font-weight: 600;
+}
+aside .swipe {
+  cursor: pointer;
+  font-size: 40px;
+  color: #777;
+  padding-left: 5px;
+}
+aside .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+aside .close:hover {
+  color: red;
+}
+/* ASIDE */
+
+/* HOME */
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.596) 0% 100%),url(../Images/Home.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.home h1 {
+  font-size: 3.625rem;
+  letter-spacing: 1px;
+}
+.home p {
+  font-size: 1.125rem;
+}
+/* HOME */
+
+/* ARTIST  */
+.artist {
+  margin: 50px 0;
+}
+.artist .title {
+  background-color: #37103a;
+  color: #fff;
+  cursor: pointer;
+}
+.artist .content {
+  background-color: #777;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.artist .content {
+  display: none;
+}
+.artist .show {
+  display: block;
+}
+/* ARTIST  */
+
+/* TIME */
+.time {
+  margin: 50px 0;
+}
+.time .box .inner {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.time .box .inner h3 {
+  font-size: 2.8125rem;
+}
+/* TIME */
+
+/* CONTACT */
+.contact {
+  margin: 50px 0;
+  display: none;
+}
+.contact-info {
+  display: none;
+}
+.form {
+  display: none;
+}
+.contact .more-info p {
+  font-size: 1.125rem;
+  color: #777;
+}
+.contact .more-info i {
+  margin-right: 5px;
+  color: purple;
+}
+.letters-left {
+  font-size: 1.125rem;
+}
+
+.social-links div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  color: gray;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.social-links div:hover {
+  background-color: #37103a;
+  color: #fff;
+  border-color: transparent;
+}
+/* CONTACT */
